@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/ng-routing-app": {},
+    "/ng-routing-app/about": {},
+    "/ng-routing-app/contact": {},
+    "/ng-routing-app/home": {},
+    "/ng-routing-app/product": {}
+  }
+}

@@ -1,0 +1,54 @@
+<section class="product bg-light">
+  <div class="container">
+    <h2 class="text-capitalize text-center fw-semibold text-success py-4">
+      our products
+    </h2>
+    <div class="row g-4">
+      @for (product of productList; track $index) {
+      <div class="col-md-3">
+        <div class="card position-relative rounded-0 border-0">
+          @if (product.onSale) {
+          <p
+            class="badge text-bg-success position-absolute top-0 end-0 rounded-0"
+          >
+            onSale
+          </p>
+          }
+
+          <div>
+            <!-- imageCover -->
+            <img
+              class="card-img-top"
+              [src]="product.imageCover"
+              [alt]="product.title"
+            />
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title h5 text-center py-2">
+              {{ product.title.split(" ", 2).join(" ") }}
+            </h3>
+            <p class="card-text small text-center">{{ product.description }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-danger">price: {{ product.price }}</p>
+              <p class="text-success">quantity: {{ product.quantity }}</p>
+            </div>
+
+            <div class="row g-2">
+              @for (imgSrc of product.images; track $index) {
+              <div class="col-md-3">
+                <img [src]="imgSrc" class="w-100" alt="" />
+              </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      }@empty {
+      <p class="text-center text-capitalize alert alert-danger">
+        data not found
+      </p>
+      }
+    </div>
+  </div>
+</section>

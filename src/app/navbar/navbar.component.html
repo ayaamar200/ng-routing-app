@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <h1 class="text-uppercase fs-3 text-success">mentor</h1>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="home"
+            routerLinkActive="bg-success text-white"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="about"
+            routerLinkActive="bg-success text-white"
+            >About</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="contact"
+            routerLinkActive="bg-success text-white"
+            >Contact</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="product"
+            routerLinkActive="bg-success text-white"
+            >Products</a
+          >
+        </li>
+      </ul>
+
+      <button
+        (click)="sayHello()"
+        class="btn btn-outline-success text-capitalize fw-semibold"
+        type="button"
+      >
+        get started
+      </button>
+    </div>
+  </div>
+</nav>

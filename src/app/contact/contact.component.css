@@ -1,0 +1,19 @@
+.form textarea {
+    min-height: 150px;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    box-shadow: 0 0 5px #198754;
+    border-color: #198754;
+  }
+  
+  .contact .icons-list span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
